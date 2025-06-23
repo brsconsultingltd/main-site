@@ -2,87 +2,343 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BRS Consulting</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-img {
+      height: 50px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #f5a623;
+    }
+
+    .hero {
+      background: #f5f5f5;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .section {
+      padding: 60px 0;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .section p, .section ul {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .section ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    .insights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .insight-card {
+      background: #fafafa;
+      border: 1px solid #eee;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .insight-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .insight-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    a {
+      color: #f5a623;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <img src="assets/logo.png" alt="BRS Consulting Logo" class="logo"/>
-    <h1>BRS Consulting</h1>
-    <p>Your trusted partner in business growth, tax compliance, and success.</p>
+  <header class="header container">
+    <a href="#home"><img src="logo_grey.png" alt="BRS Consulting Logo" class="logo-img" /></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#insights">Insights</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#business">Business Consultancy</a></li>
-      <li><a href="#accounting">Accountancy</a></li>
-      <li><a href="#taxation">Taxation</a></li>
-      <li><a href="#indirect">Indirect Taxation</a></li>
-      <li><a href="#hr">HR & Compliance</a></li>
-    </ul>
-  </nav>
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Empowering Your Ambitions with Trusted Guidance</h2>
+      <p>We’re here to support your journey—whether you're building a business, navigating change, or planning a brighter financial future.</p>
+    </div>
+  </section>
 
-  <main>
-    <section id="about">
+  <section id="about" class="section">
+    <div class="container">
       <h2>About BRS Consulting</h2>
-      <p>With over 23 years of experience, BRS Consulting offers comprehensive support in accounting, tax, business consultancy, management accounting, and business support services. Our experienced team of qualified accountants and consultants is dedicated to helping your business thrive through tailored advice and reliable service.</p>
-    </section>
+      <p>With over 23 years of experience in accounting, tax, business consultancy, and compliance, BRS Consulting is proud to serve businesses and individuals across the UK. We're more than number-crunchers — we're trusted partners who care about your long-term success.</p>
+      <p>Our team of qualified accountants and experienced consultants brings together expertise from across sectors to help clients make confident, informed decisions. From everyday bookkeeping to complex tax planning, from forming a company to expanding internationally — we offer practical advice and real results. Every solution is personalised, every conversation is respectful, and every client is valued.</p>
 
-    <section id="business">
-      <h2>Business Consultancy</h2>
-      <ul>
-        <li>Business advisory and strategy</li>
-        <li>Management accounting</li>
-        <li>Company secretarial services</li>
-      </ul>
-    </section>
+      <h3>Our Mission</h3>
+      <p>To empower individuals, businesses, and communities by delivering reliable, insightful, and practical financial and business consultancy services that unlock growth and long-term success.</p>
 
-    <section id="accounting">
-      <h2>Accountancy</h2>
-      <ul>
-        <li>Accounting and bookkeeping</li>
-        <li>Preparation of financial statements</li>
-      </ul>
-    </section>
+      <h3>Our Vision</h3>
+      <p>To be the most trusted and forward-thinking consultancy partner for ambitious organisations, recognised for our integrity, innovation, and impact across accounting, taxation, and strategic business support.</p>
 
-    <section id="taxation">
-      <h2>Taxation</h2>
-      <ul>
-        <li>Corporate tax advisory</li>
-        <li>Personal tax advisory (including Worldwide Disclosure Facility support)</li>
-        <li>Tax compliance and HMRC representation</li>
-      </ul>
-    </section>
+      <h3>Our Values</h3>
+<ul>
+  <li><strong>Integrity:</strong> We operate with honesty, transparency, and a deep commitment to ethical standards in everything we do.</li>
+  <li><strong>Excellence:</strong> We pursue the highest standards of service and technical competence, continuously improving our work to deliver measurable results.</li>
+  <li><strong>Accountability:</strong> We take ownership of our responsibilities and deliver on our promises with consistency and professionalism.</li>
+  <li><strong>Client-Centricity:</strong> We put our clients' needs first, offering tailored advice that’s as unique as their challenges and ambitions.</li>
+  <li><strong>Empathy:</strong> We listen deeply, understand thoroughly, and provide compassionate support to help clients feel confident and cared for.</li>
+  <li><strong>Innovation:</strong> We embrace change, technology, and new thinking to drive better outcomes for clients and our firm.</li>
+</ul>
+    </div>
+  </section>
 
-    <section id="indirect">
-      <h2>Indirect Taxation</h2>
-      <ul>
-        <li>VAT registration and returns</li>
-        <li>Customs duty compliance</li>
-        <li>Advice on other indirect taxes</li>
-      </ul>
-    </section>
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
 
-    <section id="hr">
-      <h2>HR & Compliance</h2>
-      <ul>
-        <li>Payroll and auto-enrolment</li>
-        <li>HR advisory services</li>
-        <li>Sponsor licence process support</li>
-      </ul>
-    </section>
+<h3>Business Consultancy</h3>
+<ul>
+  <li><strong>Business Advisory</strong> – You don’t just need numbers—you need direction. We work closely with you to shape your business strategy, optimise processes, and boost profitability. Whether you're just starting out or scaling up, we provide the insights and structure to make smart, sustainable progress.
+    <ul>
+      <li>Business start-up advice</li>
+      <li>Growth and profitability planning</li>
+      <li>Cash flow and funding support</li>
+      <li>Process and systems improvement</li>
+    </ul>
+  </li>
+  <li><strong>Management Accounting</strong> – Great decisions need great insights. Our management accounting service provides real-time reporting, KPIs, and budgeting support that helps you stay ahead of the curve. With us as your partner, you’ll always have a clear picture of your performance—and the confidence to take your next big step.
+    <ul>
+      <li>Monthly management reports</li>
+      <li>Cash flow forecasting</li>
+      <li>Budgeting and variance analysis</li>
+      <li>KPI tracking and performance reviews</li>
+    </ul>
+  </li>
+  <li><strong>Company Secretarial</strong> – Behind every compliant company is a strong secretarial foundation. We handle director appointments, statutory registers, annual filings, and more—so you remain fully compliant with Companies House and avoid penalties. Our support means no deadlines missed, no admin headaches.
+    <ul>
+      <li>Annual confirmation statements</li>
+      <li>Director/shareholder changes</li>
+      <li>PSC register maintenance</li>
+      <li>Company dissolution filings</li>
+    </ul>
+  </li>
+</ul>
 
-    <section id="mission">
-      <h2>Mission, Vision & Values</h2>
-      <p><strong>Mission:</strong> To empower businesses with practical, ethical, and tailored advice that drives sustainable growth.</p>
-      <p><strong>Vision:</strong> To be recognised as a trusted partner for businesses seeking clarity, compliance, and confidence in financial matters.</p>
-      <p><strong>Values:</strong> Integrity, reliability, transparency, and a commitment to client success.</p>
-    </section>
-  </main>
+<h3>Accountancy</h3>
+<ul>
+  <li><strong>Accounting & Bookkeeping</strong> – Let us turn your numbers into clarity. We deliver meticulous bookkeeping and reliable financial reports, so you always know where you stand. From daily transactions to year-end accounts, our service brings peace of mind, freeing you to focus on what matters most—running and growing your business.
+    <ul>
+      <li>Monthly and quarterly bookkeeping</li>
+      <li>Year-end statutory accounts</li>
+      <li>VAT return preparation and submission</li>
+      <li>Digital record-keeping with cloud software</li>
+    </ul>
+  </li>
+</ul>
 
-  <footer>
-    <p>&copy; 2025 BRS Consulting. All rights reserved.</p>
+<h3>Taxation</h3>
+<ul>
+  <li><strong>Tax Strategy & Planning</strong> – We help you build a proactive, personalised tax strategy that protects your wealth and supports your goals. Our services include UK and international tax compliance advice, helping you navigate global obligations with clarity and confidence. Our insight becomes your advantage—letting you focus on growing your business while we handle the complexities.
+    <ul>
+      <li>Tailored tax minimisation strategies</li>
+      <li>Annual and mid-year planning sessions</li>
+      <li>Capital gains, inheritance, and international tax compliance</li>
+      <li>Ongoing updates on regulatory changes</li>
+    </ul>
+  </li>
+  <li><strong>Corporate Tax Advisory</strong> – Corporate taxation is complex, but we make it manageable. Whether you're a small business or a growing company, we offer practical advice and expert planning tailored to your goals. We help ensure you stay compliant, reduce risks, and take full advantage of all available reliefs and incentives.
+    <ul>
+      <li>Corporation tax planning and returns</li>
+      <li>Group structure and tax efficiency advice</li>
+      <li>Capital allowances and R&D tax credits</li>
+      <li>HMRC correspondence and compliance checks</li>
+    </ul>
+  </li>
+  <li><strong>Personal Tax Advisory</strong> – Tax should never feel overwhelming. Our personal tax experts simplify every step, ensuring your obligations are met and your money works smarter. Whether you're a sole trader, landlord, or high earner, we provide clear, jargon-free advice that helps you feel in control of your financial journey.
+    <ul>
+      <li>Self-assessment tax returns</li>
+      <li>Tax planning for individuals and landlords</li>
+      <li>HMRC correspondence handling</li>
+      <li>Dividend and salary optimisation</li>
+      <li>Worldwide Disclosure Facility support for offshore income</li>
+    </ul>
+  </li>
+  <li><strong>HMRC Representation</strong> – An HMRC enquiry can be intimidating. But with us by your side, you’ll never face it alone. We handle all communication, defend your position with expertise, and guide you calmly through the process. Our priority is protecting your interests—every step of the way.
+    <ul>
+      <li>Handling of tax enquiries and disputes</li>
+      <li>Representation during HMRC audits</li>
+      <li>Negotiation of payment plans and settlements</li>
+      <li>Peace-of-mind support throughout the process</li>
+    </ul>
+  </li>
+
+
+<h3>Indirect Taxation</h3>
+<ul>
+  <li><strong>VAT & Indirect Tax Compliance</strong> – Indirect taxes can be complex and constantly evolving. We ensure your business stays compliant with UK VAT rules, customs duties, and industry-specific obligations. From registration to submission, we help you manage your responsibilities with confidence and efficiency.
+    <ul>
+      <li>VAT registration and deregistration</li>
+      <li>Preparation and submission of VAT returns</li>
+      <li>Advice on VAT schemes (Flat Rate, Margin, etc.)</li>
+      <li>Customs and import/export duty guidance</li>
+      <li>Support with HMRC VAT enquiries and inspections</li>
+    </ul>
+  </li>
+</ul>
+
+$2
+<h3>HR & Compliance</h3>
+<ul>
+  <li><strong>Payroll & Auto Enrolment</strong> – Your team deserves accuracy and trust every payday. We manage payroll, RTI submissions, and pensions with absolute precision, ensuring compliance while saving you time. You get a smooth, stress-free payroll experience—and your employees get the reliability they depend on.
+    <ul>
+      <li>Weekly and monthly payroll processing</li>
+      <li>Auto-enrolment pension submissions</li>
+      <li>Employee payslips and P60s</li>
+      <li>HMRC RTI filing</li>
+    </ul>
+  </li>
+  <li><strong>HR Advisory Services</strong> – Your people are your greatest asset. We support small and growing businesses with practical HR guidance, helping you build strong teams, reduce risk, and stay compliant with employment regulations. From contracts to workplace policies, we ensure your HR foundation is built to support long-term success.
+    <ul>
+      <li>Employee contracts and policy guidance</li>
+      <li>Support with sponsor licence readiness and compliance</li>
+      <li>Guidance on Home Office responsibilities for employers</li>
+      <li>Document preparation for sponsor licence applications</li>
+      <li>HR compliance and documentation reviews</li>
+      <li>Support with disciplinary and grievance procedures</li>
+      <li>Advice on onboarding, appraisals, and retention</li>
+    </ul>
+  </li>
+</ul>
+
+<section id="insights" class="section">
+    <div class="container">
+      <h2>Insights</h2>
+      <p>Latest thinking and practical guidance to help you stay ahead.</p>
+      <div class="insights-grid">
+        <div class="insight-card">
+          <h3>Why Regular Management Accounts Matter</h3>
+          <p>Tracking your business performance helps with cash flow, lending, and growth planning.</p>
+        </div>
+        <div class="insight-card">
+          <h3>Are You Ready for MTD?</h3>
+          <p>Find out what Making Tax Digital means for your business and how to comply.</p>
+        </div>
+        <div class="insight-card">
+          <h3>How to Choose the Right Business Structure</h3>
+          <p>Understand the pros and cons of sole trader, partnership, and limited company status.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email us at <a href="mailto:info@brsconsulting.com">info@brsconsulting.com</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 BRS Consulting LTD | Company Registration No: 16444232</p>
+    </div>
   </footer>
 </body>
 </html>
